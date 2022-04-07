@@ -13,20 +13,20 @@ There is also a reset button which resets all variable and puts you back in the 
 
 All of the additional criteria that I have included in my project
 
-Virtual functions
-template classes
-namespaces
-Programmer defined exceptions
-Operator overloading
-Abstract classes
-Bit structures
-Advanced pre-processor directives
-Initializer List
-C++ References
-Pointers
-Inheritance
-Destructors
-Header files (inclusion guards)
-Arrays and pointers
-Global variables
+Virtual functions, 
+template classes, 
+namespaces,
+Programmer defined exceptions, 
+Operator overloading,
+Abstract classes, 
+Bit structures, 
+Advanced pre-processor directives, 
+Initializer List, 
+C++ References, 
+Pointers, 
+Inheritance, 
+Destructors, 
+Header files (inclusion guards), 
+Arrays and pointers, 
+Global variables, 
 Private, Public, Protected
