@@ -28,28 +28,27 @@ MainWindow::MainWindow(QWidget *parent)
     ui->dilemaButton2->setVisible(false);
     ui->image_label->setPixmap(pic1);
 
-    ofstream writeFile("answers.txt");
-
-     // Writes words to the file
-     writeFile << "COLOR" << endl;
-     writeFile << "CHIEF" << endl;
-     writeFile << "METRO" << endl;
-     writeFile << "FALSE" << endl;
-     // Close the file
-     writeFile.close();
-
      string temp;
 
      // Read from the text file
-     ifstream readFile("answers.txt");
 
-     // Use a while loop together with the getline() function to read the file line by line
-     int j=0;
-     while (getline (readFile, temp)) {
-        arrayOfWords[j] = temp;
-        j++;
-    }
-    readFile.close();
+     ifstream readFile;
+
+     try {
+         readFile.open("wordleWords.txt");
+         // Use a while loop together with the getline() function to read the file line by line
+         int j=0;
+         while (getline (readFile, temp)) {
+
+            arrayOfWords[j] = temp;
+            j++;
+        }
+        readFile.close();
+     } catch (const ifstream::failure& e) { // exception
+         cout << "Exception opening/reading file";
+     }
+
+
 
 
     for (int i = 0; i < MAX; i++) {

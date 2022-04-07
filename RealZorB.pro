@@ -32,8 +32,23 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
+APP_Text.files = $$PWD/wordleWords.txt
+macx {
+    APP_Text.path = Contents/MacOS
+}
+
+win32 {
+    APP_Text.path = ./
+}
+
+linux {
+    APP_Text.path = ./
+}
+
+QMAKE_BUNDLE_DATA += APP_Text
+
 DISTFILES += \
-    homeImage.jpg
+    wordleWords.txt
 
 
 RESOURCES += \

@@ -13,6 +13,5 @@
     </qresource>
     <qresource prefix="/">
         <file>images/dark screen.jpeg</file>
-        <file>wordleWords.txt</file>
     </qresource>
 </RCC>
