@@ -1,6 +1,7 @@
 # TheRealZorb 
 
 by Dennis Kolomiyets
+
 20250762
 
 TheRealZorb is an escape mystery game where the player finds themselves in a strange building and is forced to find a way out. 
@@ -8,7 +9,11 @@ You use the directional to move around and the interact button for everything el
 There is also a reset button which resets all variable and puts you back in the room you start in.
 
 
+Instuctions
 
+Clone From Github
+Open QTCreator
+should be available from there.
 
 
 All of the additional criteria that I have included in my project
